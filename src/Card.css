@@ -1,0 +1,79 @@
+.card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 0; /* Asegúrate de no tener margen automático en los lados */
+  }
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #808080;
+  }
+  
+  .card-back {
+    background-color: #602e6c;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .card.flipped .card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .card.flipped .card-back {
+    transform: rotateY(0);
+  }
+  
+  .done-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .done-list{
+    color: #602e6c;
+  }
+
+  .done-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .done-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .done-list .word {
+    flex: 0 0 80%;
+    font-size: 16px;
+  }
+  
+  .done-list .remove-button {
+    flex: 0 0 20%;
+    text-align: right;
+  }
+  
+  
