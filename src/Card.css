@@ -1,13 +1,17 @@
+h5{
+    color: #602e6c;
+}   
+
 .card {
     width: 300px;
     height: 400px;
     perspective: 1000px;
     cursor: pointer;
     margin: 0; /* Asegúrate de no tener margen automático en los lados */
-  }
+}
   
   .card-front, .card-back {
-    width: 100%;
+    width: 90%;
     height: 80%;
     position: absolute;
     backface-visibility: hidden;
@@ -21,6 +25,7 @@
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #808080;
+    margin-top: 10px;
   }
   
   .card-back {
@@ -49,6 +54,10 @@
 
   .done-list{
     color: #602e6c;
+    height: 20%;
+    width: 77%;
+    overflow: auto;
+    padding: 70px;
   }
 
   .done-list ul {

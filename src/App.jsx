@@ -87,7 +87,7 @@ const App = () => {
       ) : (
         <p>...</p>
       )}
-<div
+      <div
         className="button-group"
         style={{
           display: 'flex',
@@ -142,7 +142,7 @@ const App = () => {
                   variant="contained" 
                   color="error" 
                   onClick={() => handleRemoveFromDone(card)}
-                  sx={{ backgroundColor: '#fc9292' }}  // Aquí puedes definir el color de fondo
+                  sx={{ backgroundColor: '#fc9292', width: '70px' }}  // Aquí puedes definir el color de fondo
                 >
                   Quitar
                 </Button>

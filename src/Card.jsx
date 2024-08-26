@@ -19,6 +19,7 @@ const Card = ({ name, translation, description, onDone, flipped, setFlipped, sho
   return (
     <div className={`card ${flipped ? 'flipped' : ''}`} onClick={handleClick}>
       <div className="card-front">
+        <h5>Click Me !!!</h5>
         <h3>{showTranslationFirst ? translation : name}</h3>
         {showTranslationFirst && <p>{description}</p>}
       </div>
